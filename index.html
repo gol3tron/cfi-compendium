@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFI Compendium - Flight Training Lesson Plans</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1><i class="fas fa-plane"></i> CFI Compendium</h1>
+                <p class="tagline">Open Source Flight Training</p>
+            </div>
+            
+            <!-- Search Box -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search lessons..." class="search-input">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <h3>Lesson Categories</h3>
+                <ul id="lessonList" class="lesson-list">
+                    <!-- Lessons will be dynamically loaded here -->
+                </ul>
+            </nav>
+            
+            <!-- GitHub Links -->
+            <div class="github-links">
+                <a href="https://github.com/gol3tron/cfi-compendium" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://github.com/gol3tron/cfi-compendium/issues/new" target="_blank" class="github-link">
+                    <i class="fas fa-bug"></i> Report Issue
+                </a>
+                <a href="https://github.com/gol3tron/cfi-compendium/blob/main/CONTRIBUTING.md" target="_blank" class="github-link">
+                    <i class="fas fa-hand-holding-heart"></i> Contribute
+                </a>
+            </div>
+        </aside>
+        
+        <!-- Main Content Area -->
+        <main class="content">
+            <div id="contentArea">
+                <div class="welcome-content">
+                    <h1>Welcome to CFI Compendium</h1>
+                    <p class="lead">An open-source collection of flight training lesson plans and resources for Certified Flight Instructors (CFIs) and student pilots.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-book-open"></i>
+                            <h3>Comprehensive Lessons</h3>
+                            <p>Well-structured lesson plans covering all aspects of flight training.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-users"></i>
+                            <h3>Community-Driven</h3>
+                            <p>Built by instructors, for instructors. Contributions welcome!</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-code-branch"></i>
+                            <h3>Open Source</h3>
+                            <p>Free to use, modify, and distribute under open-source license.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-search"></i>
+                            <h3>Easy Navigation</h3>
+                            <p>Quick search and organized categories for fast access.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="getting-started">
+                        <h2>Getting Started</h2>
+                        <ol>
+                            <li>Browse lessons using the sidebar navigation</li>
+                            <li>Use the search bar to find specific topics</li>
+                            <li>Click on any lesson to view the full content</li>
+                            <li>Want to contribute? Check out our <a href="https://github.com/gol3tron/cfi-compendium/blob/main/CONTRIBUTING.md">Contributing Guide</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Include marked.js for markdown rendering and DOMPurify for XSS protection -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
