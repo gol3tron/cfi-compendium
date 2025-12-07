@@ -104,8 +104,8 @@ Start at the pilot's door and proceed clockwise (or follow POH checklist)
    - **Water**: Will separate and sink to bottom (looks like bubbles)
    - **Sediment**: Particles or debris
    - **Proper fuel grade**: Correct color
-     - 100LL: Blue
-     - Jet A: Clear/straw colored
+     - 100LL (Low Lead Avgas): Blue
+     - Jet A (Turbine Fuel): Clear/straw colored
 
 > **Critical**: Even small amounts of water in fuel can cause engine failure. When in doubt, drain more.
 

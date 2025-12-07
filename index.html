@@ -88,8 +88,9 @@
         </main>
     </div>
     
-    <!-- Include marked.js for markdown rendering -->
+    <!-- Include marked.js for markdown rendering and DOMPurify for XSS protection -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

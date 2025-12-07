@@ -16,7 +16,7 @@ Weather knowledge is critical for aviation safety. This lesson covers the basic 
 The atmosphere consists of:
 - **Nitrogen**: 78%
 - **Oxygen**: 21%
-- **Other gases**: 1% (argon, CO₂, water vapor, etc.)
+- **Other gases**: 1% (argon, CO2, water vapor, etc.)
 
 ### Layers of the Atmosphere
 1. **Troposphere** (0-36,000 ft average)

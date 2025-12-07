@@ -2,6 +2,16 @@
 (function() {
     'use strict';
     
+    // Configure marked.js options before initialization
+    if (typeof marked !== 'undefined') {
+        marked.setOptions({
+            breaks: true,
+            gfm: true,
+            headerIds: true,
+            mangle: false
+        });
+    }
+    
     // Configuration
     const config = {
         lessonsPath: 'lessons/',
@@ -112,7 +122,10 @@
             const markdown = await response.text();
             const html = marked.parse(markdown);
             
-            contentArea.innerHTML = `<div class="markdown-content">${html}</div>`;
+            // Sanitize HTML to prevent XSS attacks
+            const sanitizedHtml = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(html) : html;
+            
+            contentArea.innerHTML = `<div class="markdown-content">${sanitizedHtml}</div>`;
             
             // Scroll to top
             window.scrollTo(0, 0);
@@ -179,16 +192,6 @@
         });
         
         renderLessonList(filtered);
-    }
-    
-    // Configure marked.js options
-    if (typeof marked !== 'undefined') {
-        marked.setOptions({
-            breaks: true,
-            gfm: true,
-            headerIds: true,
-            mangle: false
-        });
     }
     
     // Start the application when DOM is ready
